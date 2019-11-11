@@ -1,0 +1,14 @@
+/home/navneet/playground/elasticsearch-dotnet/bin/Debug/netcoreapp2.2/ElasticSearch.deps.json
+/home/navneet/playground/elasticsearch-dotnet/bin/Debug/netcoreapp2.2/ElasticSearch.runtimeconfig.json
+/home/navneet/playground/elasticsearch-dotnet/bin/Debug/netcoreapp2.2/ElasticSearch.runtimeconfig.dev.json
+/home/navneet/playground/elasticsearch-dotnet/bin/Debug/netcoreapp2.2/ElasticSearch.dll
+/home/navneet/playground/elasticsearch-dotnet/bin/Debug/netcoreapp2.2/ElasticSearch.pdb
+/home/navneet/playground/elasticsearch-dotnet/obj/Debug/netcoreapp2.2/ElasticSearch.csprojAssemblyReference.cache
+/home/navneet/playground/elasticsearch-dotnet/obj/Debug/netcoreapp2.2/ElasticSearch.csproj.CoreCompileInputs.cache
+/home/navneet/playground/elasticsearch-dotnet/obj/Debug/netcoreapp2.2/ElasticSearch.RazorAssemblyInfo.cache
+/home/navneet/playground/elasticsearch-dotnet/obj/Debug/netcoreapp2.2/ElasticSearch.RazorAssemblyInfo.cs
+/home/navneet/playground/elasticsearch-dotnet/obj/Debug/netcoreapp2.2/ElasticSearch.AssemblyInfoInputs.cache
+/home/navneet/playground/elasticsearch-dotnet/obj/Debug/netcoreapp2.2/ElasticSearch.AssemblyInfo.cs
+/home/navneet/playground/elasticsearch-dotnet/obj/Debug/netcoreapp2.2/ElasticSearch.RazorTargetAssemblyInfo.cache
+/home/navneet/playground/elasticsearch-dotnet/obj/Debug/netcoreapp2.2/ElasticSearch.dll
+/home/navneet/playground/elasticsearch-dotnet/obj/Debug/netcoreapp2.2/ElasticSearch.pdb

@@ -3,8 +3,8 @@ using System.Text;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.ObjectPool;
-using RabbitMQ.Client;
 using Newtonsoft.Json;
+using RabbitMQ.Client;
 
 using ElasticSearch.Models;
 using ElasticSearch.Policies;

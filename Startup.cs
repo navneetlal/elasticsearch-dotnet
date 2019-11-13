@@ -30,9 +30,7 @@ namespace ElasticSearch
             services.AddRabbit(Configuration);
 
             services.AddSingleton<IElasticSearchService, ElasticSearchService>();
-                    // .AddSingleton<IConfiguration>(Configuration);
-            // services.AddSingleton<IEmitLogs, EmitLog>();
-            // services.AddHostedService<ReceiveLogs>();
+            services.AddHostedService<ConsumeRabbitMQHostedService>();
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

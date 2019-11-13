@@ -27,9 +27,12 @@ namespace ElasticSearch
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+            services.AddRabbit(Configuration);
 
-            services.AddSingleton<IElasticSearchService, ElasticSearchService>()
-                    .AddSingleton<IConfiguration>(Configuration);
+            services.AddSingleton<IElasticSearchService, ElasticSearchService>();
+                    // .AddSingleton<IConfiguration>(Configuration);
+            // services.AddSingleton<IEmitLogs, EmitLog>();
+            // services.AddHostedService<ReceiveLogs>();
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

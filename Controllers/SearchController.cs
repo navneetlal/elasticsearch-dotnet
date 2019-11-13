@@ -1,21 +1,27 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
+
 using ElasticSearch.Services;
 using ElasticSearch.Models;
 
 namespace ElasticSearch.Controllers
 {
 
-  [ApiController]
+    [ApiController]
     [Route("api/[controller]")]
-    public class HomeController : ControllerBase
+    public class SearchController : ControllerBase
     {
         private readonly IElasticSearchService elasticSearchService;
         private Nest.ElasticClient client;
 
-        public HomeController(IElasticSearchService _elasticSearchService)
+        private IRabbitManager manager;
+
+        public SearchController(IElasticSearchService _elasticSearchService, IRabbitManager _manager)
         {
             elasticSearchService = _elasticSearchService;
             client = elasticSearchService.getClient();
+
+            manager = _manager;
         }
 
         [HttpGet()]
@@ -42,7 +48,9 @@ namespace ElasticSearch.Controllers
         [HttpPost]
         public IActionResult Post(Person person)
         {
+            Console.WriteLine("message: ");
             var indexResponse = client.IndexDocument(person);
+            manager.Publish(person, "Boards_Exchange", "topic", "kibin");
             return Ok(indexResponse);
         }
     }
